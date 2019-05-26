@@ -30,6 +30,4 @@ class MockFileType extends InputFileType {
         this.jsonArray = reader.readInputFile(FILE);
         super.readFile();
     }
-
-
 }

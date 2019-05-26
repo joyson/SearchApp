@@ -15,6 +15,8 @@ public class SearchingTest {
         JSONObject testObj = new JSONObject();
         testObj.put("id", 10);
         testObj.put("name", "Sam");
+        testObj.put("description", "");  // empty
+        testObj.put("details", null);  //null
 
         JSONArray list = new JSONArray();
         list.add("Kenwood");
@@ -40,6 +42,10 @@ public class SearchingTest {
         assertTrue(user.valueExists(testObj, "id", "10"));
         assertFalse(user.valueExists(testObj, "id", "12000"));
         assertTrue(user.valueExists(testObj, "name", "Sam"));
+
+        // check empty string and null
+        assertTrue(user.valueExists(testObj, "description", ""));
+        assertTrue(user.valueExists(testObj, "details", "null"));
 
         // search in property array
         assertTrue(user.valueExists(testObj, "tags", "Lynn"));

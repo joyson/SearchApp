@@ -6,6 +6,9 @@ import org.json.simple.parser.ParseException;
 
 import java.io.*;
 
+/**
+ * Class that handles reading the input Json file.
+ */
 class JsonReader {
 
     JSONArray readInputFile(String fileName) {

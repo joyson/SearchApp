@@ -1,5 +1,8 @@
 package com.zendesk.search;
 
+/**
+ * Factory class that creates instances of different file types.
+ */
 public class InputFileFactory {
 
     public static InputFileType getInputFileInstance(int fileType) {

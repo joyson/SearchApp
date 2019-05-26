@@ -1,0 +1,29 @@
+This repository contains the source code and tests for Search App.
+
+A separate Jar is attached with the submission which can be run directly from command line.
+
+
+Instructions to run the jar:
+
+1. Java should be installed in the system.
+
+2. Ensure the SearchApp.jar and the 3 json files users.json, tickets.json and organizations.json are in the same directory.
+Example:
+$ ls
+organizations.json  SearchApp.jar  tickets.json  users.json
+
+3. Run using command: java -jar SearchApp.jar
+Example:
+$ java -jar SearchApp.jar
+Welcome to Zendesk Search
+Type 'quit' to exit at anytime, Press 'Enter' to continue
+
+Successfully read: users.json
+Successfully read: tickets.json
+Successfully read: organizations.json
+
+         Select search options:
+                 * Press 1 to search Zendesk
+                 * Press 2 to view a list of searchable fields
+                 * Type 'quit' to exit
+

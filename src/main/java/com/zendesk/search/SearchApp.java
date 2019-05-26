@@ -2,6 +2,9 @@ package com.zendesk.search;
 
 import java.util.Scanner;
 
+/**
+ * Main class and entry point to the command line Search Application.
+ */
 public class SearchApp {
 
     public static void main(String[] args) {
@@ -21,12 +24,12 @@ public class SearchApp {
         while(true) {
             printWelcomeOptions();
 
-            String searchOption = scanner.next().trim();
+            String searchOption = scanner.nextLine().trim();
             switch (searchOption) {
                 case "1":
                     while (true) {
                         printSearchOptions();
-                        String searchFilesOption = scanner.next().trim();
+                        String searchFilesOption = scanner.nextLine().trim();
 
                         switch(searchFilesOption) {
                             case "1":
